@@ -15,13 +15,11 @@ include($rootPath.'header.php');
 
   <h1>トップページ</h1>
 
-  <?php
-    echo '<a href="./product/productList.php">商品一覧を見る</a>';
-    echo '<br /><br />';
-    echo '<a href="./user/cart.php">カートを見る</a>';
-    echo '<br /><br />';
-    echo '<a href="./user/myPage.php">マイページ</a>';
-?>
+  <a href="./product/productList.php">商品一覧を見る</a>
+  <br /><br />
+  <a href="./user/cart.php">カートを見る</a>
+  <br /><br />
+  <a href="./user/myPage.php">マイページ</a>
 
 </body>
 

@@ -25,8 +25,8 @@ try {
         session_start();
         $_SESSION['login_flg'] = 1;
         $_SESSION['user_id'] = $user['user_id'];
-        $_SESSION['family_name'] = $user['family_name'];
-        $_SESSION['first_name'] = $user['first_name'];
+        $_SESSION['login_family_name'] = $user['family_name'];
+        $_SESSION['login_first_name'] = $user['first_name'];
         $_SESSION['status'] = $user['status'];
         header('Location:topPage.php');
         exit();

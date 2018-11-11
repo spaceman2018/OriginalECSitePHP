@@ -11,18 +11,18 @@ if (isset($_SESSION['login_flg']) == false) {
     echo '<br /><br />';
 } elseif ($_SESSION['status'] == 0) {
     echo 'ようこそ ';
-    echo $_SESSION['family_name'].$_SESSION['first_name'];
+    echo $_SESSION['login_family_name'].$_SESSION['login_first_name'];
     echo ' 様 ';
     echo '<br /><br />';
     echo '<a href='.$rootPath.'logout.php>ログアウト</a><br />';
     echo '<br /><br />';
 } else {
     echo 'ようこそ ';
-    echo $_SESSION['family_name'].$_SESSION['first_name'];
+    echo $_SESSION['login_family_name'].$_SESSION['login_first_name'];
     echo ' 様 ';
     echo '<br /><br />';
-    echo '<a href='.$rootPath.'createStaff.php>スタッフ登録</a><br />';
-    echo '<a href='.$rootPath.'addProduct.php>商品登録</a><br />';
+    echo '<a href='.$rootPath.'./user/createStaff.php>スタッフ登録</a><br />';
+    echo '<a href='.$rootPath.'./product/addProduct.php>商品登録</a><br />';
     echo '<a href='.$rootPath.'logout.php>ログアウト</a><br />';
     echo '<br /><br />';
 }

@@ -36,10 +36,10 @@ try {
     </tr>
     <?php foreach ($products as $product): ?>
     <tr>
-      <td><a href="shop_product.php?procode=<?php echo $product['product_id'] ?>">
+      <td><a href="productDetail.php?procode=<?php echo $product['product_id'] ?>">
           <?php echo $product['product_name'] ?>
       </td>
-      <td><a href="shop_product.php?procode=<?php echo $product['product_id'] ?>">
+      <td><a href="productDetail.php?procode=<?php echo $product['product_id'] ?>">
           <?php echo $product['price'] ?>円</td>
       </a>
     </tr>
