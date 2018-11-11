@@ -5,9 +5,9 @@ session_regenerate_id(true);
 if (isset($_SESSION['login_flg']) == false) {
     echo 'ようこそ ゲスト 様 ';
     echo '<br /><br />';
-    echo '<a href='.$rootPath.'login.php>ログインはこちら</a><br />';
-    echo '<a href='.$rootPath.'user/createUser.php>会員登録はこちら</a><br />';
-    echo '<a href='.$rootPath.'topPage.php>トップページへ戻る</a><br />';
+    echo '<a href='.$rootPath.'login.php>ログイン</a><br />';
+    echo '<a href='.$rootPath.'user/createUser.php>会員登録</a><br />';
+    echo '<a href='.$rootPath.'topPage.php>トップページ</a><br />';
     echo '<br /><br />';
 } elseif ($_SESSION['status'] == 0) {
     echo 'ようこそ ';

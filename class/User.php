@@ -54,8 +54,27 @@ class User
         }
     }
 
-    public function createUser()
+    public function createUser($user_id, $password, $family_name, $first_name, $family_name_kana, $first_name_kana, $sex, $email, $status)
     {
-        return $parents;
+        try {
+            $dbh = new ConnectDB();
+            $sql = 'INSERT INTO user_info (user_id, password, family_name, first_name, family_name_kana, first_name_kana, sex, email, status, logined, regist_date, update_date) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 0, now(), now())';
+            $args[] = $user_id;
+            $args[] = $password;
+            $args[] = $family_name;
+            $args[] = $first_name;
+            $args[] = $family_name_kana;
+            $args[] = $first_name_kana;
+            $args[] = $sex;
+            $args[] = $email;
+            $args[] = $status;
+            $stmt = $dbh->exec($sql, $args);
+            $dbh = null;
+
+            return $stmt;
+        } catch (Exception $e) {
+            echo 'ただいま障害により大変ご迷惑をお掛けしております。';
+            exit();
+        }
     }
 }

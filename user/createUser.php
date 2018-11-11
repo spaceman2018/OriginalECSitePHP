@@ -32,7 +32,7 @@ require_once($rootPath.'common/common.php');
     性別<br />
     <input type="radio" name="sex" value="0" checked>男性<br />
     <input type="radio" name="sex" value="1">女性<br />
-    メールアドレス<br />
+    メールアドレス (例 : email@abc.com)<br />
     <input type="text" name="email" style="width:200px"><br />
     <br />
 
