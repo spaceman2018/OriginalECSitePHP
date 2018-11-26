@@ -1,7 +1,7 @@
 <?php
 session_start();
-$_SESSION=array();
-if (isset($_COOKIE[session_name()])==true) {
+$_SESSION = array();
+if (isset($_COOKIE[session_name()]) == true) {
     setcookie(session_name(), '', time()-42000, '/');
 }
 session_destroy();
@@ -19,9 +19,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/index/OriginalECSitePHP/header.php');
 
 <body>
 
-  ログアウトしました。<br />
-  <br />
-  <a href="/index/OriginalECSitePHP/topPage.php">トップページへ</a>
+  ログアウトしました
 
 </body>
 

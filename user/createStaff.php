@@ -1,6 +1,5 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'].'/index/OriginalECSitePHP/header.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/index/OriginalECSitePHP/common/common.php');
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +14,7 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/index/OriginalECSitePHP/common/common.p
 
   <h1>管理者登録</h1>
 
-  管理者情報を入力してください。<br />
+  管理者情報を入力してください<br />
   <br />
   <form method="post" action="/index/OriginalECSitePHP/user/createStaffConfirm.php">
     ユーザーID<br />
